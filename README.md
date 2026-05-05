@@ -22,25 +22,6 @@ Images	         Cloudinary	                                            Store pro
 Payments	     PayPal Checkout (sandbox)	                            Process orders
 Deployment	     Vercel (frontend) & Vercel/Node (backend)	            Free hosting
 
-📁 Project Structure (high‑level)
-root/
-├─ backend/
-│   ├─ models/          # User, Product, Cart, Order, Checkout, etc.
-│   ├─ routes/          # auth, products, cart, checkout, admin, upload
-│   ├─ data/            # product.js  ← sample product data
-│   ├─ config/          # db.js
-│   ├─ seed.js          # DB seeding script
-│   └─ server.js        # Express entry point
-├─ frontend/
-│   ├─ src/
-│   │   ├─ components/  # UI pieces (Header, NavBar, CardDrawer, etc.)
-│   │   ├─ layout/      # Layout wrappers (UserLayout, AdminLayout)
-│   │   ├─ pages/       # Home, Collection, Product, Checkout, Admin…
-│   │   ├─ redux/       # store + slices
-│   │   └─ App.jsx
-│   └─ vite.config.js
-├─ .env.example        # env variable template
-└─ README.md
 ⚙️ Installation & Running Locally
 Clone the repo
 
@@ -100,12 +81,6 @@ Auth – Verify the Authorization: Bearer <token> header is sent on protected ro
 Cloudinary – Check the upload response ({ url: "..."} ) and ensure the URL is stored in images array.
 PayPal – In the sandbox dashboard you’ll see orders appear under “Transactions”.
 
-🤝 Contributing
-Fork the repo.
-Create a feature branch (git checkout -b feature/xyz).
-Commit your changes and push.
-Open a Pull Request describing the change.
-Please follow the existing code style (Prettier + ESLint) and write unit tests for any new logic.
 
 📄 License
 Distributed under the MIT License. See LICENSE for details.
