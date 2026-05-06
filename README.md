@@ -37,7 +37,6 @@ npm run dev          # runs server on http://localhost:9000
 Seed the database (once, after env is set)
 
 node seed.js
-This creates an admin user (admin@example.com / 123456) and inserts sample products.
 
 Frontend
 
